@@ -1,5 +1,12 @@
 provider "azurerm" {
   features {}
+  subscription_id = "39e8a5f9-3aa6-4cc9-9019-56b0854bd391"
+}
+
+# O resto do seu código continua igual...
+resource "azurerm_resource_group" "rg" {
+  name     = var.resource_group_name
+  location = var.location
 }
 
 resource "azurerm_resource_group" "rg" {
